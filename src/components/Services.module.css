@@ -1,0 +1,156 @@
+.services {
+  background: var(--parchment);
+  position: relative;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.card {
+  position: relative;
+  background: var(--cream);
+  border: 1px solid rgba(143, 174, 124, 0.28);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.85rem 1.9rem;
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease),
+    border-color 0.35s var(--ease);
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--moss-400), var(--amber-500));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s var(--ease);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--sage-300);
+}
+
+.card:hover::before {
+  transform: scaleX(1);
+}
+
+.iconWrap {
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-md);
+  background: var(--sage-100);
+  color: var(--forest-700);
+  margin-bottom: 1.4rem;
+  transition: background 0.35s var(--ease), color 0.35s var(--ease);
+}
+
+.card:hover .iconWrap {
+  background: var(--forest-700);
+  color: var(--sage-200);
+}
+
+.title {
+  font-size: 1.28rem;
+  color: var(--forest-800);
+}
+
+.desc {
+  margin-top: 0.7rem;
+  color: var(--ink-soft);
+  font-size: var(--fs-sm);
+  line-height: 1.65;
+}
+
+/* ---- Emergency banner ---- */
+.emergency {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  background: linear-gradient(120deg, var(--forest-800), var(--forest-700));
+  color: var(--on-dark);
+  border-radius: var(--radius-lg);
+  padding: 1.6rem 2rem;
+  box-shadow: var(--shadow-md);
+}
+
+.emergencyText {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+.emergencyIcon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-md);
+  background: rgba(189, 89, 21, 0.2);
+  color: var(--amber-400);
+}
+
+.emergencyTitle {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.emergencyDesc {
+  font-size: var(--fs-sm);
+  color: var(--on-dark-mute);
+  margin-top: 2px;
+}
+
+.emergencyCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--amber-500);
+  color: #fff;
+  font-weight: 600;
+  font-size: var(--fs-sm);
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+  transition: background 0.25s var(--ease), transform 0.25s var(--ease);
+}
+
+.emergencyCta:hover {
+  background: var(--amber-600);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .emergency {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .emergencyCta {
+    width: 100%;
+    justify-content: center;
+  }
+}
