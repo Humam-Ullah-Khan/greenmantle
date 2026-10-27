@@ -1,7 +1,7 @@
 # Greenmantle Tree Care — Landing Page
 
 A single, fast, conversion-focused landing page for a UK-based tree care
-(arboricultural) client. Built with **Vite + React** and plain CSS with custom
+(arboricultural) client. Built with static **HTML, CSS and vanilla JavaScript** with custom
 properties. Design direction references [savatree.com](https://www.savatree.com)
 but is adapted for the UK market with a rich, heritage "greenery" aesthetic.
 
@@ -19,32 +19,20 @@ npm run preview  # preview the production build
 ```
 public/
   favicon.svg            # SVG favicon / logo mark
-src/
-  main.jsx               # React entry point
-  App.jsx                # Page composition (all sections in order)
-  data/
-    site.js              # ALL content & contact details live here
-  assets/
-    icons.jsx            # Hand-drawn inline SVG icon set
-  hooks/
-    useReveal.jsx        # Scroll-reveal (IntersectionObserver) helpers
-  styles/
-    tokens.css           # Design tokens (colours, type, spacing, shadows)
-    global.css           # Base styles + shared utility classes
-  components/            # One folder per section (jsx + css module)
+index.html               # Complete static page markup and content
+styles.css               # Design tokens, layout and component styles
+script.js                # Progressive-enhancement interactions
 ```
 
 ## Editing content
 
-Nearly all copy, contact details, testimonials, services and imagery are
-centralised in **`src/data/site.js`**. Update that single file to change the
-page content — no component edits needed for text changes.
+Copy, contact details, services and imagery are in **`index.html`**.
 
 ## Before launch — TODO
 
 - [ ] Replace the **placeholder brand** ("Greenmantle Tree Care") with the real
       client name, logo and brand colours.
-- [ ] Replace **contact details** in `src/data/site.js` — phone, email, address,
+- [ ] Replace **contact details** in `index.html` — phone, email, address,
       hours and service areas are all fictional placeholders.
 - [ ] Wire the **contact form** to a real backend / form service (e.g. Formspree,
       Netlify Forms, or a custom endpoint). Currently it shows a local success
@@ -59,5 +47,5 @@ page content — no component edits needed for text changes.
   via URL params, and are lazy-loaded for performance.
 - **Accessibility**: semantic landmarks, focus-visible styles, `aria` labels, and
   `prefers-reduced-motion` support are included.
-- **Performance**: no UI framework beyond React, minimal JS, lazy images, and a
+- **Performance**: no UI framework, minimal vanilla JS, lazy images, and a
   small CSS footprint for fast load times.
