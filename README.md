@@ -18,6 +18,7 @@ npm run preview  # preview the production build
 
 ```
 favicon.svg              # SVG favicon / logo mark
+logo.png                 # Full Blaine Tree Removals brand lockup
 robots.txt               # Search crawler rules
 index.html               # Complete static page markup and content
 styles.css               # Design tokens, layout and component styles

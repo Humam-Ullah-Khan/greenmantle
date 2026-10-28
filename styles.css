@@ -3,3 +3,9 @@
 /* Contact-only top bar alignment */
 ._topbar_1dvjy_1 ._inner_1dvjy_15{justify-content:flex-end}
 @media(max-width:960px){._topbar_1dvjy_1 ._inner_1dvjy_15{justify-content:center}}
+
+/* Blaine Tree Removals logo lockup */
+.site-logo{display:block;object-fit:contain}
+.site-logo--header{width:168px;height:auto;max-height:64px}
+.site-logo--footer{width:250px;max-width:100%;height:auto;padding:.55rem .75rem;background:var(--cream);border-radius:var(--radius-md)}
+@media(max-width:420px){.site-logo--header{width:148px;max-height:58px}}
