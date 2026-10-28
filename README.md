@@ -1,7 +1,7 @@
-# Greenmantle Tree Care — Landing Page
+# Blaine Tree Removals — Landing Page
 
-A single, fast, conversion-focused landing page for a UK-based tree care
-(arboricultural) client. Built with static **HTML, CSS and vanilla JavaScript** with custom
+A single, fast, conversion-focused landing page for Blaine Tree Removals in
+Coon Rapids, Minnesota. Built with static **HTML, CSS and vanilla JavaScript** with custom
 properties. Design direction references [savatree.com](https://www.savatree.com)
 but is adapted for the UK market with a rich, heritage "greenery" aesthetic.
 
@@ -17,8 +17,8 @@ npm run preview  # preview the production build
 ## Project structure
 
 ```
-public/
-  favicon.svg            # SVG favicon / logo mark
+favicon.svg              # SVG favicon / logo mark
+robots.txt               # Search crawler rules
 index.html               # Complete static page markup and content
 styles.css               # Design tokens, layout and component styles
 script.js                # Progressive-enhancement interactions
@@ -30,10 +30,7 @@ Copy, contact details, services and imagery are in **`index.html`**.
 
 ## Before launch — TODO
 
-- [ ] Replace the **placeholder brand** ("Greenmantle Tree Care") with the real
-      client name, logo and brand colours.
-- [ ] Replace **contact details** in `index.html` — phone, email, address,
-      hours and service areas are all fictional placeholders.
+- [ ] Confirm business hours and service areas in `index.html`.
 - [ ] Wire the **contact form** to a real backend / form service (e.g. Formspree,
       Netlify Forms, or a custom endpoint). Currently it shows a local success
       message only.

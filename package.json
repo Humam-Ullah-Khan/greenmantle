@@ -1,9 +1,9 @@
 {
-  "name": "greenmantle-tree-care",
+  "name": "blaine-tree-removals",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Landing page for Greenmantle Tree Care - UK arboricultural services",
+  "description": "Landing page for Blaine Tree Removals in Coon Rapids, Minnesota",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

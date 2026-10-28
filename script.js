@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <h3 class="_successTitle_1qao7_501">Thank you — enquiry received!</h3>
         <p class="_successText_1qao7_511">
           We’ve got your details and one of our arborists will be in touch within one working day.
-          For anything urgent, please call <a href="tel:+441234567890">01234 567 890</a>.
+          For anything urgent, please call <a href="tel:+16128950120">+1 (612) 895-0120</a>.
         </p>
       </div>`
   })
