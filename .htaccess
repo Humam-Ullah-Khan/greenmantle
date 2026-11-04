@@ -1,0 +1,25 @@
+# Blaine Tree Removals - Apache / LiteSpeed rules (Hostinger)
+# Upload this to public_html next to index.html. If public_html already has a
+# .htaccess, merge these lines into it instead of replacing it.
+
+RewriteEngine On
+
+# 1. One version of the site: send www to the bare domain over HTTPS.
+#    The https://www version only redirects once the SSL certificate also
+#    covers www (fix that in hPanel > SSL). http://www works right away.
+RewriteCond %{HTTP_HOST} ^www\.blainetreeremovals\.com$ [NC]
+RewriteRule ^ https://blainetreeremovals.com%{REQUEST_URI} [R=301,L]
+
+# 2. The homepage lives at / only. Links to index.html (kept relative so pages
+#    open from your computer) get a permanent redirect to /.
+RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+RewriteRule ^index\.html$ / [R=301,L]
+
+# 3. Branded "page not found" page.
+ErrorDocument 404 /404.html
+
+# 4. Never serve project/developer files, even if they get uploaded by mistake.
+<FilesMatch "^(package(-lock)?\.json|README\.md|vite\.config\.js|\.gitignore)$">
+  Require all denied
+</FilesMatch>
+RedirectMatch 404 ^/(node_modules|dist|\.claude|\.git)(/|$)

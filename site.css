@@ -145,3 +145,4 @@ header .subnav .wrap{display:block;padding-block:0}
 .map{margin-top:24px;border-radius:8px;overflow:hidden;border:1px solid var(--line);background:#DCE2D8;aspect-ratio:16/9;max-height:440px}
 .map iframe{display:block;width:100%;height:100%;border:0}
 @media (max-width:600px){.map{aspect-ratio:4/3}}
+.hero .updated{font-size:.9rem;color:#CFE3D3;margin:0}

@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Landing page for Blaine Tree Removals in Coon Rapids, Minnesota",
+  "description": "Website for Blaine Tree Removals, tree removal in Blaine, Minnesota",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
