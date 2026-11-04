@@ -27,6 +27,7 @@ tree-removal-cost.html           # Cost guide article
 winter-tree-removal.html         # Winter removal guide article
 assets/                          # Job photos (descriptive filenames help SEO)
 sitemap.xml, robots.txt
+favicon.ico, favicon-96x96.png, favicon-192x192.png, apple-touch-icon.png, favicon.svg  # Site icons (Google uses these in search results)
 ```
 
 No build step needed: upload these files as they are to the web root.

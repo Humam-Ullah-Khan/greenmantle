@@ -15,7 +15,7 @@ const pages = [
 ]
 
 // Root-level files that must be served as-is (Vite only copies public/ by default).
-const staticFiles = ['robots.txt', 'sitemap.xml', 'logo.png', 'favicon.svg']
+const staticFiles = ['robots.txt', 'sitemap.xml', 'logo.png', 'favicon.svg', 'favicon.ico', 'favicon-96x96.png', 'favicon-192x192.png', 'apple-touch-icon.png']
 
 // Photos keep their original names in dist/ so og:image and schema URLs stay valid.
 const photoDir = 'assets'
