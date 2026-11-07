@@ -12,6 +12,9 @@ const pages = [
   'crane-tree-removal',
   'tree-removal-cost',
   'winter-tree-removal',
+  'about',
+  'contact',
+  'privacy-policy',
   '404',
 ]
 

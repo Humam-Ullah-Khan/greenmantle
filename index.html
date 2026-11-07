@@ -43,12 +43,32 @@
     "@type": "PostalAddress",
     "addressLocality": "Blaine",
     "addressRegion": "MN",
+    "postalCode": "55434",
     "addressCountry": "US"
   },
-  "areaServed": {
-    "@type": "City",
-    "name": "Blaine",
-    "containedInPlace": {"@type": "AdministrativeArea", "name": "Anoka County, Minnesota"}
+  "geo": {"@type": "GeoCoordinates", "latitude": 45.1608, "longitude": -93.2349},
+  "priceRange": "$$",
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Blaine",
+      "containedInPlace": {"@type": "AdministrativeArea", "name": "Anoka County, Minnesota"}
+    },
+    {"@type": "Place", "address": {"@type": "PostalAddress", "addressLocality": "Blaine", "addressRegion": "MN", "postalCode": "55434", "addressCountry": "US"}},
+    {"@type": "Place", "address": {"@type": "PostalAddress", "addressLocality": "Blaine", "addressRegion": "MN", "postalCode": "55449", "addressCountry": "US"}},
+    {"@type": "Place", "address": {"@type": "PostalAddress", "addressLocality": "Blaine", "addressRegion": "MN", "postalCode": "55014", "addressCountry": "US"}}
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "emergency storm damage service",
+    "telephone": "+1-651-800-1205",
+    "areaServed": "Blaine, MN",
+    "hoursAvailable": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    }
   },
   "openingHoursSpecification": [
     {
@@ -101,7 +121,7 @@
 
 <header>
   <div class="wrap">
-    <a class="brand" href="index.html">Blaine <span>Tree Removals</span></a>
+    <a class="brand" href="/">Blaine <span>Tree Removals</span></a>
     <a class="head-phone" href="tel:+16518001205">(651) 800-1205</a>
   </div>
   <nav class="subnav" aria-label="Services">
@@ -122,7 +142,7 @@
   <section class="hero">
     <div class="wrap">
       <span class="eyebrow" style="color:#9FD3A8">Blaine, MN · Anoka County</span>
-      <h1>Tree Service in Blaine, MN: Removal, Stump Grinding &amp; Trimming</h1>
+      <h1>Tree Removal &amp; Tree Service in Blaine, MN</h1>
       <p>Local, insured tree crew serving homeowners across Blaine. Dead ash trees, storm damage, overgrown yards and leftover stumps. Free quotes, clean job sites.</p>
       <div class="ctas">
         <a class="btn btn-call" href="tel:+16518001205">Call (651) 800-1205</a>
@@ -359,6 +379,7 @@
         </div>
         <label for="msg">Tell us about the tree (optional)<textarea id="msg" name="message" rows="3"></textarea></label>
         <button class="btn btn-call" type="submit">Send my free quote request</button>
+        <p style="font-size:.85rem;margin:0">We use your details only to reply to you. See our <a href="privacy-policy.html">privacy policy</a>.</p>
       </form>
     </div>
   </section>
@@ -376,6 +397,9 @@
       <li><a href="crane-tree-removal.html">Crane Removal</a></li>
       <li><a href="winter-tree-removal.html">Winter Removal</a></li>
       <li><a href="tree-removal-cost.html">Cost Guide</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
     </ul></nav>
     <span>Serving Blaine, MN · <a href="tel:+16518001205">(651) 800-1205</a></span>
   </div>
@@ -383,7 +407,7 @@
 
 <div class="callbar">
   <a class="btn btn-call" href="tel:+16518001205">Call now</a>
-  <a class="btn btn-ghost" href="index.html#quote">Free quote</a>
+  <a class="btn btn-ghost" href="/#quote">Free quote</a>
 </div>
 
 </body>
