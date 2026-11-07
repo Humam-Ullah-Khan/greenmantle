@@ -25,6 +25,7 @@ emerald-ash-borer-removal.html
 crane-tree-removal.html
 tree-removal-cost.html           # Cost guide article
 winter-tree-removal.html         # Winter removal guide article
+seo/keyword-research.md          # Keyword plan (internal; do not upload)
 404.html                         # Branded "page not found" page (noindex)
 .htaccess                        # Hostinger rules: www -> bare domain, /index.html -> /, 404 page, blocks dev files
 assets/                          # Job photos (descriptive filenames help SEO)
