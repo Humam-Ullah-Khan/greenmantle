@@ -4,11 +4,11 @@
 // Goals > Conversions > All conversions > (action) > Tag setup > See event snippet.
 //   ADS_ID      Google tag / conversion ID
 //   FORM_LABEL  "Request quote" conversion
-//   CALL_LABEL  "Click to call" conversion
+//   CALL_LABEL  "Website call tap" conversion (Contact goal, source: Website)
 // Set ADS_ID to '' to switch all tracking off.
 const ADS_ID = 'AW-18542451459'
 const FORM_LABEL = 'oj0lCO-5g7QdEIO23YlF'
-const CALL_LABEL = 'WecNCPi6jLQdEIO23YlF'
+const CALL_LABEL = 'ztPACN7ylrodEIO23YlF'
 
 if (ADS_ID) {
   const tag = document.createElement('script')
